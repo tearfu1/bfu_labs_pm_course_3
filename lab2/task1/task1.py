@@ -23,5 +23,6 @@ with Image.open(filename) as img:
     result_img.paste(g_colored, (img.width * 2, img.height))
     result_img.paste(b_colored, (img.width * 3, img.height))
 
+    result_img.show()
     result_filename = f'{filename.split('.')[0]}-channels.png'
     result_img.save(result_filename, 'PNG')
