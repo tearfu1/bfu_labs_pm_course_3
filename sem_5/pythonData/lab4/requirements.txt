@@ -1,0 +1,4 @@
+numpy
+moviepy~=1.0.3
+colorama
+pillow~=10.4.0
