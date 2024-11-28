@@ -25,7 +25,7 @@ cur.execute("""CREATE TABLE IF NOT EXISTS courier
 
 cur.execute("""CREATE TABLE IF NOT EXISTS transport
 (
-    car_lic_plate     INT PRIMARY KEY,
+    car_lic_plate     TEXT PRIMARY KEY,
     brand             TEXT,
     registration_date TEXT,
     color             TEXT

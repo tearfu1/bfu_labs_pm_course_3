@@ -82,7 +82,7 @@ class Order(BaseModel):
 	__tablename__ = 'order'
 	order_id = IntegerField(primary_key=True, null=False)
 	sender_id = ForeignKeyField(Sender, related_name='sender_id', null=False)
-	recipient_id = ForeignKeyField(Sender, related_name='recipient_id', null=False)
+	recipient_id = ForeignKeyField(Recipient, related_name='recipient_id', null=False)
 	order_date = CharField()
 	delivery_date = CharField()
 	delivery_price = CharField()
