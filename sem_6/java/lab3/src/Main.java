@@ -3,7 +3,6 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         TicketSystem system = new TicketSystem();
-        // Передаём тестовые данные, созданные в Main
         system.setCinemas(initTestData());
         system.start();
     }

@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
 
-// Класс для кинотеатра
 public class Cinema {
     private final String name;
     private final List<Hall> halls = new ArrayList<>();

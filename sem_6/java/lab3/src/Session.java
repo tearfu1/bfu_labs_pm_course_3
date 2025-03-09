@@ -1,8 +1,8 @@
-// Класс сеанса
-class Session {
+
+public class Session {
     String filmName;
-    int duration; // в минутах
-    private final String time; // время начала сеанса, формат "HH:mm"
+    int duration;
+    private final String time;
     private final Hall hall;
 
     public Session(String filmName, int duration, String time, Hall hall) {

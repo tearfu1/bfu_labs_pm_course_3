@@ -46,7 +46,6 @@ public class TicketSystem {
         return login.equals(expectedLogin) && password.equals(expectedPassword);
     }
 
-    // Вспомогательные методы для выбора объектов
     private Cinema chooseCinema(Scanner sc) {
         if (cinemas.isEmpty()) {
             System.out.println("Нет доступных кинотеатров.");
@@ -104,7 +103,6 @@ public class TicketSystem {
         return sessions.get(choice - 1);
     }
 
-    // Администраторское меню
     private void adminMenu(Scanner sc) {
         int choice;
         do {
@@ -143,7 +141,6 @@ public class TicketSystem {
         } while (choice != 6);
     }
 
-    // Пользовательское меню
     private void userMenu(Scanner sc) {
         int choice;
         do {
@@ -178,7 +175,6 @@ public class TicketSystem {
         } while (choice != 5);
     }
 
-    // Методы для администратора
     private void addCinema(Scanner sc) {
         System.out.print("Введите название кинотеатра: ");
         String name = sc.nextLine();
@@ -228,7 +224,6 @@ public class TicketSystem {
         System.out.println("Сеанс создан.");
     }
 
-    // Метод для администратора: просмотр всех данных
     private void viewAllData() {
         if (cinemas.isEmpty()) {
             System.out.println("Нет доступных кинотеатров.");
@@ -262,7 +257,6 @@ public class TicketSystem {
         }
     }
 
-    // Методы для пользователя
     private void sellTicket(Scanner sc) {
         Cinema cinema = chooseCinema(sc);
         if (cinema == null) return;
@@ -287,7 +281,6 @@ public class TicketSystem {
         }
     }
 
-    // Находит ближайший сеанс для введённого фильма (с проверкой времени и наличия свободных мест)
     private void searchNearestSession(Scanner sc) {
         System.out.print("Введите название фильма: ");
         String filmName = sc.nextLine();
@@ -315,7 +308,6 @@ public class TicketSystem {
         System.out.println("Сеанс не найден.");
     }
 
-    // Показывает все сеансы, время которых позже текущего
     private void viewAllUpcomingSessions() {
         LocalTime now = LocalTime.now();
         boolean found = false;

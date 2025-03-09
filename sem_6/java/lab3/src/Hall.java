@@ -2,7 +2,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-// Класс для зала с конфигурацией кресел и списком сеансов
 public class Hall {
     private final String name;
     private char[][] seats; // 'O' - свободно, 'X' - занято
