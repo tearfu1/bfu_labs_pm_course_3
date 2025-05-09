@@ -1,0 +1,35 @@
+/* styles.css */
+.root {
+    -fx-font-family: "Arial", sans-serif; /* Пример смены шрифта */
+}
+
+.button {
+    -fx-font-size: 13px;
+}
+
+#deleteButton { /* Пример стилизации кнопки по fx:id */
+    -fx-background-color: #d9534f; /* Красный */
+    -fx-text-fill: white;
+}
+
+#deleteButton:hover {
+    -fx-background-color: #c9302c;
+}
+
+#addButton, #editButton {
+    -fx-background-color: #5cb85c; /* Зеленый */
+    -fx-text-fill: white;
+}
+#addButton:hover, #editButton:hover {
+    -fx-background-color: #4cae4c;
+}
+
+.table-view .column-header {
+    -fx-background-color: #f0f0f0;
+    -fx-font-weight: bold;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #a0d2ff; /* Голубой для выделенной строки */
+    -fx-text-fill: black;
+}
