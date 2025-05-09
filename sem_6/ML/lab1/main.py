@@ -76,7 +76,6 @@ def compute_regression(x, y):
 	b = mean_y - m * mean_x
 	return m, b
 
-
 def plot_regression_line(x, y, m, b, title, x_label, y_label):
 	x_line = np.linspace(np.min(x), np.max(x), 100)
 	y_line = m * x_line + b
